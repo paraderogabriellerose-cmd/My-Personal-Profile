@@ -60,23 +60,21 @@ h2 {
 /* Profile Information */
 
 .profile-info {
-
     color: darkgreen;
-
     font-family: Arial, sans-serif;
-
     font-size: 16px;
-
     line-height: 1.8;
-
     letter-spacing: 0.5px;
-
     background-color: white;
 
+    /* CSS Box Model */
+    width: 80%;
+    height: auto;
     padding: 15px;
+    border: 2px solid darkgreen;
+    margin: 20px auto;
 
     opacity: 0.95;
-
 }
 
 
@@ -171,13 +169,14 @@ h2 {
 /* Main Header */
 
 #main-header {
-
+    position: relative;
+    z-index: 10;
     text-align: center;
-
     background-color: lightgray;
-
+    padding: 20px;
+    border: 2px solid darkblue;
+    margin-bottom: 20px;
     opacity: 0.95;
-
 }
 
 
@@ -211,4 +210,55 @@ form {
     opacity: 0.95;
 }
 
- /* Updated for CSS Lesson 2.1 */   
+ /* Updated for CSS Lesson 2.1 */
+ 
+ /* CSS Lists */
+
+ul {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+ol {
+    list-style-type: upper-alpha;
+    padding-left: 30px;
+}
+
+/* CSS Links */
+
+.nav-link {
+    padding: 8px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.nav-link:link {
+    color: blue;
+}
+
+.nav-link:visited {
+    color: purple;
+}
+
+.nav-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    color: green;
+}
+
+.profile-image {
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 3px solid darkblue;
+}
+
+/* Clear Float */
+
+.clear-section {
+    clear: both;
+}
